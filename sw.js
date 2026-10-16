@@ -1,5 +1,5 @@
 // ログイン クエスト（Claude版）— 一度開けば、通信が切れても開けるようにする（つながるときは常に最新を取る）
-const CACHE = 'lq-claude-ca7c4f42f1';
+const CACHE = 'lq-claude-f5b522d968';
 const FILES = ['./', './index.html', './manifest.webmanifest', './apple-touch-icon.png', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
